@@ -36,6 +36,44 @@ public class PageGenerator extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet PageGenerator at " + request.getContextPath() + "</h1>");
+            out.println("<table>");
+            //header
+            out.println("<tr>");
+            //col 1
+            out.println("<th>Doctor</th>");
+            //col 2
+            out.println("<th>Actor</th>");
+            //col 3
+            out.println("<th>Main Companion</th>");
+            out.println("</tr>");
+            //row 1
+            out.println("<tr>");
+            //col1
+            out.println("<td>Ten</td>");
+            //col2
+            out.println("<td>David Tennant</td>");
+            //col3
+            out.println("<td>Rose Tyler</td>");
+            out.println("</tr>");
+            //row 2
+            out.println("<tr>");
+            //col1
+            out.println("<td>Eleven</td>");
+            //col2
+            out.println("<td>Matt Smith</td>");
+            //col3
+            out.println("<td>Amy and Rory Pond</td>");
+            out.println("</tr>");
+            //row 3
+            out.println("<tr>");
+            //col1
+            out.println("<td>Twelve</td>");
+            //col2
+            out.println("<td>Peter Capaldi</td>");
+            //col3
+            out.println("<td>Clara Oswald</td>");
+            out.println("</tr>");
+            out.println("</table>");
             out.println("</body>");
             out.println("</html>");
         }
