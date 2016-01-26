@@ -36,42 +36,42 @@ public class PageGenerator extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet PageGenerator at " + request.getContextPath() + "</h1>");
-            out.println("<table>");
+            out.println("<table style=\"border: 1px solid black\">");
             //header
             out.println("<tr>");
             //col 1
-            out.println("<th>Doctor</th>");
+            out.println("<th style=\"border: 1px solid black\">Doctor</th>");
             //col 2
-            out.println("<th>Actor</th>");
+            out.println("<th style=\"border: 1px solid black\">Actor</th>");
             //col 3
-            out.println("<th>Main Companion</th>");
+            out.println("<th style=\"border: 1px solid black\">Main Companion</th>");
             out.println("</tr>");
             //row 1
             out.println("<tr>");
             //col1
-            out.println("<td>Ten</td>");
+            out.println("<td style=\"border: 1px solid black\">Ten</td>");
             //col2
-            out.println("<td>David Tennant</td>");
+            out.println("<td style=\"border: 1px solid black\">David Tennant</td>");
             //col3
-            out.println("<td>Rose Tyler</td>");
+            out.println("<td style=\"border: 1px solid black\">Rose Tyler</td>");
             out.println("</tr>");
             //row 2
             out.println("<tr>");
             //col1
-            out.println("<td>Eleven</td>");
+            out.println("<td style=\"border: 1px solid black\">Eleven</td>");
             //col2
-            out.println("<td>Matt Smith</td>");
+            out.println("<td style=\"border: 1px solid black\">Matt Smith</td>");
             //col3
-            out.println("<td>Amy and Rory Pond</td>");
+            out.println("<td style=\"border: 1px solid black\">Amy and Rory Pond</td>");
             out.println("</tr>");
             //row 3
             out.println("<tr>");
             //col1
-            out.println("<td>Twelve</td>");
+            out.println("<td style=\"border: 1px solid black\">Twelve</td>");
             //col2
-            out.println("<td>Peter Capaldi</td>");
+            out.println("<td style=\"border: 1px solid black\">Peter Capaldi</td>");
             //col3
-            out.println("<td>Clara Oswald</td>");
+            out.println("<td style=\"border: 1px solid black\">Clara Oswald</td>");
             out.println("</tr>");
             out.println("</table>");
             out.println("</body>");
