@@ -12,7 +12,9 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>JSP page creating the table from PageGenerator using HTML instead of java code</h1>
+        <h1>JSP page creating the table from PageGenerator using HTML instead of java code I used HTML instead 
+            of java snippets because 
+        of the content of my table</h1>
         <table style="border: 1px solid black">
             <tr>
                 <th style="border: 1px solid black">Doctor</th>
