@@ -21,6 +21,7 @@ import model.WelcomeService;
  */
 @WebServlet(name = "greeter", urlPatterns = {"/greeter"})
 public class greeter extends HttpServlet {
+    private static final String GO_TO_PAGE = "/greeterResponse.jsp";
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -33,18 +34,20 @@ public class greeter extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
         response.setContentType("text/html;charset=UTF-8");
+        
         try (PrintWriter out = response.getWriter()) {
             String username = request.getParameter("username");
             WelcomeService welcSrv = new WelcomeService();
             String responseMsg = welcSrv.getGreeting(username);
 
             request.setAttribute("myMsg", responseMsg);
-            RequestDispatcher view = request.getRequestDispatcher("/greeterResponse.jsp");
+            RequestDispatcher view = request.getRequestDispatcher(GO_TO_PAGE);
             view.forward(request, response);
         } catch (Exception e) {
             request.setAttribute("errorMsg", e.getMessage());
-            RequestDispatcher view = request.getRequestDispatcher("/greeterResponse.jsp");
+            RequestDispatcher view = request.getRequestDispatcher(GO_TO_PAGE);
             view.forward(request, response);
         }
 //

@@ -4,6 +4,8 @@
     Author     : Alyson
 --%>
 
+<%@page import="java.util.Random"%>
+<%@page import="java.util.Random"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -36,6 +38,23 @@
                 <td style="border: 1px solid black">Peter Capaldi</td>
                 <td style="border: 1px solid black">Clara Oswald</td>
             </tr>
+        </table>
+        
+        <%! 
+            public int getRandomNumber(){
+                Random random = new Random();
+                int rNum = random.nextInt();
+                return rNum;
+            }
+        %>
+        <table>
+            <% for(int x = 0; x < 3; x++){
+            %><tr>
+                <td><%=getRandomNumber()%></td>
+                <td><%=getRandomNumber()%></td>
+                <td><%=getRandomNumber()%></td>
+            </tr><%
+            }%>
         </table>
     </body>
 </html> 
